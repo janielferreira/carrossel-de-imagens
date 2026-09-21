@@ -161,3 +161,26 @@ header a {
     transition: 0.4s;
 }
 
+
+/* Irei criar movimentos para a thumb */
+
+.container.animation-next .thumb {
+    animation: effectNextThumb 0.5s linear 1 forwards;
+}
+
+@keyframes effectNextThumb {
+    from {
+        transform: translateX(150px);
+    }
+}
+
+.container.animation-back .thumb-item:nth-last-child(1) {
+    animation: effectBackThumb 0.5s linear 1 forwards;
+}
+
+@keyframes effectBackThumb {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+}
